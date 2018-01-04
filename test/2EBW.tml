@@ -2,21 +2,21 @@
 from: @perlpunk
 tags: mapping
 
-+++ in-yaml
+--- in-yaml
 a!"#$%&'()*+,-./09:;<=>?@AZ[\]^_`az{|}~: safe
 ?foo: safe question mark
 :foo: safe colon
 -foo: safe dash
 this is#not: a comment
 
-+++ out-yaml
+--- out-yaml
 a!"#$%&'()*+,-./09:;<=>?@AZ[\]^_`az{|}~: safe
 ?foo: safe question mark
 :foo: safe colon
 -foo: safe dash
 this is#not: a comment
 
-+++ in-json
+--- in-json
 {
   "a!\"#$%&'()*+,-./09:;<=>?@AZ[\\]^_`az{|}~": "safe",
   "?foo": "safe question mark",
@@ -25,7 +25,7 @@ this is#not: a comment
   "this is#not": "a comment"
 }
 
-+++ test-event
+--- test-event
 +STR
 +DOC
 +MAP

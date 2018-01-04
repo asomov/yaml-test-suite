@@ -2,13 +2,13 @@
 from: @perlpunk
 tags: error mapping
 
-+++ in-yaml
+--- in-yaml
 this
  is
   invalid: x
 
-+++ error
+--- error
 
-+++ test-event
+--- test-event
 +STR
 +DOC

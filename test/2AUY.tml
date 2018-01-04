@@ -2,19 +2,19 @@
 from: NimYAML tests
 tags: tag sequence
 
-+++ in-yaml
+--- in-yaml
  - !!str a
  - b
  - !!int 42
  - d
 
-+++ out-yaml
+--- out-yaml
 - !!str a
 - b
 - !!int 42
 - d
 
-+++ in-json
+--- in-json
 [
   "a",
   "b",
@@ -22,7 +22,7 @@ tags: tag sequence
   "d"
 ]
 
-+++ test-event
+--- test-event
 +STR
 +DOC
 +SEQ
